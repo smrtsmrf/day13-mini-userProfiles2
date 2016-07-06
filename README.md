@@ -41,7 +41,7 @@ angular.module('userProfiles').service('mainService', function() {
 });
 ```
 
-- Now we need to inject $http into our service, and replace our getUsers method with a getUsers AJAX request
+<!-- - Now we need to inject $http into our service, and replace our getUsers method with a getUsers AJAX request -->
 
 ``` javascript
 angular.module('userProfiles').service('mainService', function($http) {
@@ -80,7 +80,7 @@ We are simply setting our users equal to the result of our service's getUsers fu
 
 What we need to do is implement a promise! A promise will keep Angular from jumping to conclusions. Instead of defning $scope.users ASAP, Angular will wait until the data comes through to define it. 
 
-- Replace the old getUsers method with a new one which has a promise!
+<!-- - Replace the old getUsers method with a new one which has a promise! -->
 ``` javascript
 angular.module('userProfiles').controller('MainController', function($scope, mainService) {
   $scope.getUsers = function() {
